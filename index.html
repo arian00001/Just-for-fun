@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Centered Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0c10; /* Dark premium background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Pink Glow Container */
+        .img-container {
+            position: relative;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 6px;
+            /* Premium pink gradient border */
+            background: linear-gradient(135deg, #ff416c, #ff4b2b); 
+            /* Soft pink neon glow effect */
+            box-shadow: 0 25px 60px rgba(255, 65, 108, 0.3); 
+            transition: transform 0.3s ease;
+        }
+
+        .img-container:hover {
+            transform: scale(1.02); /* Subtle hover effect */
+        }
+
+        .hero-img {
+            max-width: 90vw;
+            max-height: 80vh;
+            display: block;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img-container">
+        <img src="https://i.ibb.co.com/BVDxN8Rr/Screenshot-20260630-132156.jpg" alt="Premium Visual" class="hero-img">
+    </div>
+
+</body>
+</html>
